@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #61dafb;
+  --background-color: #282c34;
+  --text-color: white;
+  --header-font-size: calc(10px + 2vmin);
+  --logo-height: 40vmin;
+  --padding: 20px;
+  --button-background-color: #f44336;
+  --button-text-color: white;
+  --button-border-radius: 4px;
+  --button-padding: 10px 20px;
+  --button-hover-background-color: #e53935;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: var(--padding);
+}
+
+.App-logo {
+  height: var(--logo-height);
+  pointer-events: none;
+  transition: transform 0.3s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
+.App-header {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--header-font-size);
+  color: var(--text-color);
+  transition: background-color 0.3s;
+}
+
+.App-header:hover {
+  background-color: #1f242b;
+}
+
+.App-link {
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+}
+
+form {
+  margin-bottom: var(--padding);
+}
+
+button {
+  margin-left: 10px;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--button-hover-background-color);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+h1 {
+  color: #333;
+  margin: 20px 0;
+}

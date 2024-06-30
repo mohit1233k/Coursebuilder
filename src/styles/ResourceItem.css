@@ -1,0 +1,51 @@
+:root {
+  --border-color: #ccc;
+  --primary-color: #f44336;
+  --button-text-color: #fff;
+  --border-radius: 4px;
+  --padding: 5px;
+  --button-padding: 2px 5px;
+  --hover-background-color: #e53935;
+}
+
+.resource-item {
+  border: 1px solid var(--border-color);
+  padding: var(--padding);
+  margin-top: 5px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.resource-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resource-item p {
+  cursor: pointer;
+  margin: 0;
+}
+
+.resource-item p:hover {
+  text-decoration: underline;
+}
+
+.resource-item button {
+  margin-left: 10px;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--button-padding);
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.resource-item button:hover {
+  background-color: var(--hover-background-color);
+  transform: scale(1.05);
+}
+
+.resource-item button:active {
+  transform: scale(0.95);
+}

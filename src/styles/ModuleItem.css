@@ -1,0 +1,56 @@
+:root {
+  --border-color: #ddd;
+  --primary-color: #f44336;
+  --button-text-color: #fff;
+  --border-radius: 4px;
+  --padding: 10px;
+  --button-padding: 5px 10px;
+  --hover-background-color: #e53935;
+  --item-background-color: #fafafa;
+  --item-hover-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --item-padding: 15px;
+}
+
+.module-item {
+  border: 1px solid var(--border-color);
+  padding: var(--padding);
+  margin-top: 10px;
+  border-radius: var(--border-radius);
+  background-color: var(--item-background-color);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.module-item:hover {
+  background-color: #f0f0f0;
+  box-shadow: var(--item-hover-shadow);
+}
+
+.module-item h2 {
+  cursor: pointer;
+  margin: 0 0 10px;
+  transition: color 0.3s;
+}
+
+.module-item h2:hover {
+  color: var(--primary-color);
+}
+
+.module-item button {
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--button-padding);
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.module-item button:hover {
+  background-color: var(--hover-background-color);
+  transform: scale(1.05);
+}
+
+.module-item button:active {
+  transform: scale(0.95);
+}

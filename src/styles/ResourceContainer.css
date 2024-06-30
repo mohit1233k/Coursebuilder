@@ -1,0 +1,21 @@
+:root {
+  --container-margin-top: 10px;
+  --container-padding: 15px;
+  --container-background: #f4f4f4;
+  --container-border-radius: 8px;
+  --container-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resource-container {
+  margin-top: var(--container-margin-top);
+  padding: var(--container-padding);
+  background-color: var(--container-background);
+  border-radius: var(--container-border-radius);
+  box-shadow: var(--container-shadow);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.resource-container:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
