@@ -8,7 +8,7 @@ const App = () => {
   return (
     <CourseProvider>
       <div className="app">
-        <h1>Course Builder</h1>
+        <h1>Course Builder Website</h1>
         <AddModuleForm />
         <ModuleContainer />
       </div>
